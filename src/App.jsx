@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+
+// Componentes
 import Navbar from './components/Navbar';
+import MobileBottomBar from './components/MobileBottomBar'; 
+import Footer from './components/Footer'; // <--- IMPORTAÇÃO NOVA
+
+// Páginas
 import Home from './pages/Home';
 import Sacramentos from './pages/Sacramentos';
-import Contato from './pages/Contato'; // IMPORT NOVO
-import Sobre from './pages/Sobre'; // IMPORT NOVO
-import { useEffect } from 'react';
-import Admin from './pages/Admin'; // Importa a página nova
+import Contato from './pages/Contato';
+import Sobre from './pages/Sobre';
+import Admin from './pages/Admin';
 import Agenda from './pages/Agenda';
 import Dizimo from './pages/Dizimo';
 
-
+// Utilitário para rolar ao topo na troca de rota
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,41 +27,31 @@ const ScrollToTop = () => {
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen font-sans selection:bg-parish-gold selection:text-white">
+      <div className="min-h-screen font-sans selection:bg-parish-gold selection:text-white bg-[#faf7f5]">
+        
+        {/* Navegação */}
         <Navbar />
+        <MobileBottomBar />
         <ScrollToTop /> 
 
+        {/* Rotas */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sacramentos" element={<Sacramentos />} />
-          <Route path="/contato" element={<Contato />} /> {/* ROTA NOVA */}
-          <Route path="/sobre" element={<Sobre />} />     {/* ROTA NOVA */}
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/sobre" element={<Sobre />} />
           <Route path="/agenda" element={<Agenda />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/dizimo" element={<Dizimo />} />
 
-
-          
-          {/* Páginas temporárias caso o link de Pastorais seja clicado */}
-          <Route path="/pastorais" element={<div className='pt-32 text-center text-2xl font-serif'>Em construção...</div>} />
-          <Route path="/comunidades" element={<div className='pt-32 text-center text-2xl font-serif'>Em construção...</div>} />
+          {/* Páginas placeholder */}
+          <Route path="/pastorais" element={<div className='pt-32 pb-20 text-center text-2xl font-serif text-parish-brown h-screen flex items-center justify-center'>Em construção...</div>} />
+          <Route path="/comunidades" element={<div className='pt-32 pb-20 text-center text-2xl font-serif text-parish-brown h-screen flex items-center justify-center'>Em construção...</div>} />
         </Routes>
 
-        <footer className="bg-parish-dark text-parish-light py-10 border-t border-white/10">
-          <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
-            <div>
-              <h4 className="font-serif text-xl font-bold mb-2">Paróquia São Miguel Arcanjo</h4>
-              <p className="text-sm opacity-60 max-w-xs">Defendei-nos no combate.</p>
-            </div>
-            
-            <div className="text-sm opacity-60">
-              <p>Rua da Matriz, 123 - Centro</p>
-              <p>(11) 99999-9999</p>
-              {/* Agora sim temos um link de contato no rodapé */}
-              <a href="/contato" className="text-parish-gold hover:underline mt-2 block">Entre em contato</a>
-            </div>
-          </div>
-        </footer>
+        {/* Rodapé Novo */}
+        <Footer />
+
       </div>
     </BrowserRouter>
   );

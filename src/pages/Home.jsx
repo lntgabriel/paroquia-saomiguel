@@ -10,26 +10,32 @@ const Home = () => {
     <div className="bg-white">
       <Hero />
       
-      {/* Container dos Cards Flutuantes (fica por cima do corte) */}
+      {/* Cards flutuantes */}
       <div className="relative z-30"> 
          <CardsLinks />
       </div>
 
       {/* 
-          AQUI ESTÁ A MUDANÇA DE COR DO FUNDO
-          Mudei para bg-[#f4f1ea] (Um bege/cinza quente mais escuro).
-          Isso cria uma "faixa" diferente na tela.
+         MUDANÇA AQUI:
+         Adicionei `overflow-hidden` para nada vazar nas laterais (evita barra de rolagem horizontal).
       */}
-      <div className="bg-[#f4f1ea] pb-24 pt-24 -mt-12 relative z-10 border-t border-b border-[#e5e0d8]">
-         {/* Adicionei uma "luz" decorativa no fundo pra tirar o aspecto seco */}
-         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/40 to-transparent pointer-events-none"></div>
+      <div className="bg-[#f4f1ea] pb-20 pt-24 -mt-12 relative z-10 border-t border-b border-[#e5e0d8] overflow-hidden">
+         {/* Luz decorativa */}
+         <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-gradient-to-l from-white/40 to-transparent pointer-events-none"></div>
          
          <AgendaPreview />
       </div>
 
       <LiturgiaSection />
 
-      <DizimoSection />
+      {/* 
+         MUDANÇA FINAL AQUI:
+         No container pai do Dizimo, adicionei 'pb-32 md:pb-0'.
+         Isso cria um espaço vazio extra no final SÓ NO CELULAR pra barra não tampar nada.
+      */}
+      <div className="pb-32 md:pb-0">
+        <DizimoSection />
+      </div>
     </div>
   );
 };
