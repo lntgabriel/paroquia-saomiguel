@@ -73,7 +73,7 @@ const Footer = () => {
               
               <div className="flex items-center gap-3">
                 <Phone className="text-parish-gold shrink-0" size={18} />
-                <p>(11) 2253-7499</p>
+                <p>(11) 5050-5716</p>
               </div>
 
               <div className="flex items-center gap-3">

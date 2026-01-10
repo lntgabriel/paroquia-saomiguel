@@ -10,7 +10,7 @@ const Contato = () => {
     e.preventDefault();
     
     // 1. Pega o número da secretaria (formato internacional sem +)
-    const numeroSecretaria = "551122537499"; // (11) 2253-7499
+    const numeroSecretaria = "551150505716"; // (11) 5050-5716
 
     // 2. Monta o texto bonito
     const texto = `
@@ -71,7 +71,7 @@ ${formData.message}
                   </div>
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider opacity-60">Telefone Fixo</span>
-                    <p className="font-mono text-lg mt-1 font-bold">(11) 2253-7499</p>
+                    <p className="font-mono text-lg mt-1 font-bold">(11) 5050-5716</p>
                   </div>
                 </div>
 
