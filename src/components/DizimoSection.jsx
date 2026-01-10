@@ -1,75 +1,54 @@
-import React, { useState } from 'react';
-import { HeartHandshake, QrCode } from 'lucide-react';
-import ModalDizimo from './ModalDizimo'; // Importamos o modal
+import React from 'react';
+import { Heart, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const DizimoSection = () => {
-  // Estado para controlar se o modal está aberto ou fechado
-  const [showModal, setShowModal] = useState(false);
-
   return (
-    <>
-      <section id="dizimo" className="py-20 bg-parish-light relative overflow-hidden">
-        {/* Decoração */}
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-parish-beige opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-parish-gold opacity-20 blur-3xl"></div>
+    <section id="dizimo" className="py-20 bg-white relative overflow-hidden">
+      
+      {/* Container Principal */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Bloco de Chamada (Agora mais clean e convidativo) */}
+        <div className="bg-[#faf7f5] rounded-3xl p-8 md:p-16 border border-[#e8e2d2] flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+          
+          {/* Elementos decorativos */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-parish-terracotta/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div className="absolute bottom-0 left-0 w-40 h-40 bg-parish-gold/5 rounded-full blur-3xl -ml-10 -mb-10"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* Lado Esquerdo: Texto */}
+          <div className="w-full md:w-2/3 z-10 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-gray-100 rounded-full text-xs font-bold text-parish-terracotta uppercase tracking-wider mb-4 shadow-sm">
+              <Heart size={14} fill="currentColor" />
+              <span>Contribuição</span>
+            </div>
             
-            {/* Lado Esquerdo */}
-            <div className="w-full md:w-1/2 space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 bg-parish-terracotta/10 text-parish-terracotta rounded-full text-sm font-semibold uppercase tracking-wider">
-                <HeartHandshake size={18} />
-                <span>Devolução Consciente</span>
-              </div>
-              
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-parish-dark leading-tight">
-                O Dízimo é um gesto de <br />
-                <span className="text-parish-gold relative">Amor e Gratidão</span>
-              </h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-parish-dark mb-4">
+              Ajude-nos a evangelizar
+            </h2>
 
-              <p className="text-gray-700 text-lg leading-relaxed text-justify">
-                Dizimista é aquele que experimenta a fidelidade de Deus e retribui com generosidade. 
-                Sua contribuição ajuda a manter a igreja, a evangelização e as obras sociais.
-              </p>
-            </div>
-
-            {/* Lado Direito */}
-            <div className="w-full md:w-1/2">
-              <div className="bg-white rounded-2xl shadow-xl p-8 border border-parish-beige">
-                <h3 className="text-xl font-bold text-center text-parish-dark mb-6">
-                  Como devolver seu dízimo?
-                </h3>
-
-                <div className="flex flex-col items-center bg-gray-50 p-6 rounded-xl border border-dashed border-gray-300 mb-6">
-                  <QrCode size={48} className="text-parish-dark mb-4" />
-                  <span className="text-sm text-gray-500 uppercase font-bold tracking-wide mb-2">Chave Pix (CNPJ)</span>
-                  <p className="text-2xl font-mono text-parish-terracotta font-bold select-all cursor-pointer">
-                    00.000.000/0001-00
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* ESSE BOTÃO AGORA ABRE O MODAL */}
-                  <button 
-                    onClick={() => setShowModal(true)}
-                    className="w-full py-3 bg-parish-dark text-white rounded-lg font-semibold hover:bg-black transition-colors"
-                  >
-                    Ser Dizimista
-                  </button>
-                  <button className="w-full py-3 border border-parish-dark text-parish-dark rounded-lg font-semibold hover:bg-parish-light transition-colors">
-                    Falar no Whatsapp
-                  </button>
-                </div>
-              </div>
-            </div>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
+              Sua oferta mantém nossa igreja de portas abertas, sustenta as obras sociais e leva a palavra de Deus mais longe. 
+              <br className="hidden md:block"/>Toda doação, de qualquer valor, é bem-vinda.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Renderizamos o Modal aqui, ele fica escondido até o showModal ser true */}
-      <ModalDizimo isOpen={showModal} onClose={() => setShowModal(false)} />
-    </>
+          {/* Lado Direito: Ação */}
+          <div className="w-full md:w-auto z-10 flex flex-col gap-4">
+             <Link to="/dizimo" onClick={() => window.scrollTo(0,0)}>
+               <button className="w-full md:w-auto px-8 py-4 bg-parish-dark text-white rounded-xl font-bold hover:bg-black transition-all shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group whitespace-nowrap">
+                 Fazer uma Doação <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20}/>
+               </button>
+             </Link>
+             
+             <p className="text-xs text-gray-400 text-center md:text-right uppercase tracking-wider font-bold">
+                Via PIX ou Transferência
+             </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -43,7 +43,7 @@ const Navbar = () => {
     { name: 'A Paróquia', path: '/sobre', isScroll: false },
     { name: 'Sacramentos', path: '/sacramentos', isScroll: false },
     { name: 'Agenda', path: '/agenda', isScroll: false }, // Já tínhamos mudado
-    { name: 'Dízimo', path: '/dizimo', isScroll: false }, // <--- MUDANÇA AQUI (isScroll: false, path: '/dizimo')
+    { name: 'Doação', path: '/dizimo', isScroll: false }, // <--- MUDANÇA AQUI (isScroll: false, path: '/dizimo')
     { name: 'Contato', path: '/contato', isScroll: false },
   ];
 
