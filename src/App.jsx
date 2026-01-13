@@ -14,6 +14,8 @@ import Sobre from './pages/Sobre';
 import Admin from './pages/Admin';
 import Agenda from './pages/Agenda';
 import Dizimo from './pages/Dizimo';
+import Comunidades from './pages/Comunidades';
+import Pastorais from './pages/Pastorais';
 
 // Utilitário para rolar ao topo na troca de rota
 const ScrollToTop = () => {
@@ -43,6 +45,8 @@ function App() {
           <Route path="/agenda" element={<Agenda />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/dizimo" element={<Dizimo />} />
+          <Route path="/comunidades" element={<Comunidades />} />
+          <Route path="/pastorais" element={<Pastorais />} />
 
           {/* Páginas placeholder */}
           <Route path="/pastorais" element={<div className='pt-32 pb-20 text-center text-2xl font-serif text-parish-brown h-screen flex items-center justify-center'>Em construção...</div>} />
