@@ -1,15 +1,16 @@
 import React from 'react';
-import { Clock, MapPin, ArrowRight } from 'lucide-react';
+import { Clock, MapPin, ArrowRight, Calendar, Star, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { eventosDB } from '../data/eventos'; 
 
 const AgendaPreview = () => {
-  const hoje = new Date(2025, 0, 1); 
+  const hoje = new Date(2026, 0, 10); 
   
+  // AUMENTADO PARA 4 EVENTOS (Preenche melhor o espaço vertical)
   const proximosEventos = eventosDB
     .filter(evt => new Date(evt.data + 'T12:00:00') >= hoje)
     .sort((a, b) => new Date(a.data) - new Date(b.data))
-    .slice(0, 3);
+    .slice(0, 4); 
 
   const getDiaMes = (dataString) => {
     const data = new Date(dataString + 'T12:00:00');
@@ -22,133 +23,152 @@ const AgendaPreview = () => {
     <section id="agenda" className="px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="max-w-7xl mx-auto">
         
-        {/* CORREÇÃO 1: CABEÇALHO CENTRALIZADO NO MOBILE */}
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-8 md:mb-12 text-center md:text-left gap-4 md:gap-0">
-           <div>
-              <span className="block text-parish-terracotta font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-2">
-                Programação 2025
+        {/* Título VOLTOU ao estilo original (Alinhado, Hierarquia melhor) */}
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 pb-4 border-b border-[#e5e0d8]">
+           <div className="text-center md:text-left w-full md:w-auto">
+              <span className="block text-parish-terracotta font-bold tracking-[0.2em] text-xs uppercase mb-2">
+                Programação
               </span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-parish-dark">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-parish-dark">
                 Agenda <span className="italic text-parish-brown">Paroquial</span>
               </h2>
            </div>
            
-           <Link to="/agenda" className="hidden md:flex items-center gap-2 text-parish-terracotta font-bold border-b border-parish-terracotta/30 hover:border-parish-terracotta transition-all pb-1 text-xs uppercase tracking-widest">
-              Ver calendário completo <ArrowRight size={16}/>
+           <Link to="/agenda" className="hidden md:flex items-center gap-2 text-parish-dark hover:text-parish-gold transition-colors text-xs font-bold uppercase tracking-widest mb-1">
+              Ver calendário completo <ArrowRight size={14}/>
            </Link>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           
-          {/* CORREÇÃO 2: CARTÃO SIMÉTRICO NO MOBILE */}
-          {/* Antes estava rounded-br-[4rem] sempre. Agora é rounded-2xl no mobile e volta a ser "tortinho estiloso" só no PC */}
-          <div className="lg:col-span-1 bg-parish-dark text-white rounded-2xl md:rounded-bl-2xl md:rounded-br-[4rem] p-6 md:p-8 relative overflow-hidden shadow-2xl flex flex-col justify-between min-h-[380px] md:min-h-[420px]">
+          {/* --- COLUNA ESQUERDA: ROTINA (CARD DARK) --- */}
+          <div className="lg:col-span-1 bg-parish-dark text-white rounded-xl md:rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-2xl flex flex-col border border-white/5 h-full">
             
-            {/* Decoração */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
-            
-            <div>
-              <div className="relative z-10 flex items-center gap-4 mb-8">
-                <div className="p-3 bg-white/10 backdrop-blur-md rounded-xl text-parish-gold border border-white/5 shadow-inner shrink-0">
-                  <Clock size={28} />
-                </div>
-                <div>
-                  <span className="block text-[10px] font-bold uppercase tracking-widest text-parish-gold mb-1 opacity-80">Fixos da Semana</span>
-                  <h3 className="text-2xl md:text-3xl font-serif font-medium leading-none">Santas Missas</h3>
-                </div>
-              </div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
 
-              <div className="space-y-6 relative z-10">
-                <div className="group">
-                    <div className="flex justify-between items-end mb-2">
-                      <span className="font-serif text-lg md:text-xl tracking-wide">Terça-feira</span>
-                      <span className="text-parish-gold font-mono text-lg md:text-xl">19:30</span>
+            <div className="relative z-10">
+                {/* Cabeçalho Card */}
+                <div className="flex justify-between items-center mb-8 pb-4 border-b border-white/10">
+                    <div>
+                        <h3 className="font-serif text-2xl text-parish-gold font-bold">Semana</h3>
+                        <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-wide">Missa & Confissão</p>
                     </div>
-                    <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-transparent"></div>
-                </div>
-                
-                <div className="group">
-                    <div className="flex justify-between items-end mb-2">
-                      <span className="font-serif text-lg md:text-xl tracking-wide">Quinta <span className="text-[10px] md:text-xs font-sans opacity-60 ml-1 uppercase tracking-wide hidden sm:inline">Adoração</span></span>
-                      <span className="text-parish-gold font-mono text-lg md:text-xl">19:00</span>
-                    </div>
-                    <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-transparent"></div>
+                    <div className="bg-white/10 p-2 rounded-lg"><Clock size={20} className="text-parish-gold"/></div>
                 </div>
 
-                <div className="group">
-                    <div className="flex justify-between items-end mb-2">
-                      <span className="font-serif text-lg md:text-xl tracking-wide">Sexta-feira</span>
-                      <span className="text-parish-gold font-mono text-lg md:text-xl">15:00</span>
+                {/* Bloco Confissão */}
+                <div className="bg-white/5 rounded-lg p-4 mb-8 border border-white/5">
+                    <div className="flex items-center gap-2 mb-3">
+                        <Star size={12} className="text-yellow-500 fill-current"/>
+                        <span className="text-xs font-bold uppercase tracking-widest text-gray-300">Confissões (Matriz)</span>
                     </div>
-                    <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-transparent"></div>
+                    <div className="flex justify-between text-sm">
+                        <div className="flex flex-col"><span className="text-gray-500 text-[10px] uppercase">Quarta</span><span>17h - 19h</span></div>
+                        <div className="w-[1px] bg-white/10 mx-2"></div>
+                        <div className="flex flex-col text-right"><span className="text-gray-500 text-[10px] uppercase">Sábado</span><span>09h - 11:30</span></div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            
-            {/* Box Domingo */}
-            <div className="relative mt-8">
-                <div className="absolute inset-0 bg-parish-gold blur-lg opacity-20"></div>
-                <div className="relative bg-parish-gold text-parish-dark p-4 md:p-5 rounded-2xl text-center">
-                    <span className="block text-[10px] font-bold uppercase tracking-widest mb-2 text-center border-b border-black/10 pb-2">Domingo (Dia do Senhor)</span>
-                    <div className="flex justify-center gap-6 text-xl md:text-2xl font-bold font-serif">
-                      <span>08:00</span>
-                      <span className="opacity-30 font-light">|</span>
-                      <span>19:00</span>
+
+                {/* Missas Semana */}
+                <div className="space-y-3 mb-8">
+                    <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-300">Quarta <span className="text-[10px] text-gray-500">(Matriz)</span></span>
+                        <span className="font-bold text-parish-gold font-mono">19:30</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-300">Quinta <span className="text-[10px] text-gray-500">(Imaculada)</span></span>
+                        <span className="font-bold text-parish-gold font-mono">20:00</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-300">Sexta <span className="text-[10px] text-gray-500">(Matriz)</span></span>
+                        <span className="font-bold text-parish-gold font-mono">20:00</span>
+                    </div>
+                </div>
+
+                {/* Final de Semana */}
+                <div className="space-y-6 pt-4 border-t border-white/10 mt-auto">
+                    <div>
+                        <h4 className="text-xs font-bold text-parish-terracotta uppercase tracking-wide mb-2">Sábado</h4>
+                        <ul className="text-xs space-y-1.5 text-gray-300">
+                            <li className="flex justify-between"><span>Divino Espírito Santo</span> <span className="font-bold text-white">18:00</span></li>
+                            <li className="flex justify-between"><span>Sagrado Coração</span> <span className="font-bold text-white">19:30</span></li>
+                            <li className="flex justify-between"><span>N. Sra. do Carmo</span> <span className="font-bold text-white">20:00</span></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className="text-xs font-bold text-parish-terracotta uppercase tracking-wide mb-2">Domingo</h4>
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-300">
+                            {/* AQUI ESTÁ A CORREÇÃO DA NATIVIDADE: LISTA NORMAL */}
+                            <div className="flex justify-between border-b border-white/5 pb-1">
+                                <span>Matriz</span> <span className="font-bold text-white">08h | 10h</span>
+                            </div>
+                            <div className="flex justify-between border-b border-white/5 pb-1">
+                                <span>Imaculada</span> <span className="font-bold text-white">10:00</span>
+                            </div>
+                            <div className="flex justify-between border-b border-white/5 pb-1">
+                                <span>Sta. Rita</span> <span className="font-bold text-white">18:00</span>
+                            </div>
+                            <div className="flex justify-between border-b border-white/5 pb-1">
+                                <span>Sta. Edwiges</span> <span className="font-bold text-white">18:00</span>
+                            </div>
+                            {/* Natividade agora segue o padrão, sem caixa estranha */}
+                            <div className="col-span-2 flex justify-between border-b border-white/5 pb-1">
+                                <span>Natividade</span> <span className="font-bold text-white">19:30</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
           </div>
 
-          {/* LISTA DE EVENTOS */}
-          <div className="lg:col-span-2 relative pl-4 sm:pl-0">
-             
-             {/* Timeline apenas no desktop */}
-             <div className="hidden sm:block absolute left-[3.2rem] top-6 bottom-6 w-[2px] bg-parish-terracotta/20 rounded-full"></div>
+          {/* --- COLUNA DIREITA: EVENTOS --- */}
+          <div className="lg:col-span-2 h-full flex flex-col">
+             <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 h-full flex flex-col">
+                
+                <div className="flex items-center gap-3 mb-6">
+                    <Calendar className="text-parish-terracotta" size={24} />
+                    <h3 className="font-serif text-xl md:text-2xl font-bold text-parish-dark">Destaques</h3>
+                </div>
 
-             <div className="flex flex-col gap-4 md:gap-6">
-                {proximosEventos.length > 0 ? proximosEventos.map((evt, index) => {
-                    const { dia, mes } = getDiaMes(evt.data);
-                    
-                    return (
-                    <Link to="/agenda" key={index} className="relative group flex flex-row items-center bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 z-10">
-                        
-                        {/* Data compacta no mobile, maior no desktop */}
-                        <div className="flex-shrink-0 mr-4 md:mr-8 bg-parish-light/30 border border-parish-light w-16 h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl flex flex-col items-center justify-center text-parish-dark group-hover:bg-parish-terracotta group-hover:text-white group-hover:border-parish-terracotta transition-colors shadow-inner">
-                            <span className="text-xl md:text-3xl font-serif font-bold leading-none">{dia}</span>
-                            <span className="text-[10px] font-sans font-bold uppercase tracking-widest mt-1">{mes}</span>
-                        </div>
-
-                        {/* Detalhes */}
-                        <div className="flex-1 w-full border-l-0 sm:border-l sm:border-gray-100 sm:pl-8 border-dashed min-w-0">
-                            {/* Titulo Truncado se for muito grande */}
-                            <h4 className="text-base md:text-xl font-serif font-bold text-parish-dark mb-1 md:mb-2 group-hover:text-parish-terracotta transition-colors leading-tight">
-                                {evt.titulo}
-                            </h4>
+                <div className="grid md:grid-cols-2 gap-4 flex-1">
+                    {/* Agora renderiza até 4 eventos */}
+                    {proximosEventos.length > 0 ? proximosEventos.map((evt, index) => {
+                        const { dia, mes } = getDiaMes(evt.data);
+                        return (
+                        <Link to="/agenda" key={index} className="flex gap-4 p-4 rounded-xl border border-gray-100 bg-[#fbfaf9] hover:border-parish-gold/50 transition-all group hover:shadow-md h-full">
                             
-                            <div className="flex flex-wrap items-center gap-3 text-xs font-medium text-gray-500 uppercase tracking-wide">
-                                {evt.hora && <span className="flex items-center gap-1"><Clock size={12} className="text-parish-gold"/> {evt.hora}</span>}
-                                {/* Esconde o local no mobile se for muito pequeno pra nao quebrar layout, ou trunca */}
-                                {evt.local && <span className="hidden xs:flex items-center gap-1 truncate"><MapPin size={12} className="text-parish-gold"/> {evt.local}</span>}
+                            <div className="flex flex-col items-center justify-center w-14 h-14 bg-white rounded-lg shadow-sm border border-gray-200 group-hover:border-parish-terracotta shrink-0">
+                                <span className="font-bold text-lg leading-none text-parish-dark">{dia}</span>
+                                <span className="text-[10px] uppercase font-bold tracking-widest text-gray-400">{mes}</span>
                             </div>
-                        </div>
+                            
+                            <div className="min-w-0 flex flex-col justify-center"> 
+                                <div className="flex items-center gap-2 mb-1">
+                                    {evt.tipo.includes('festa') && <span className="text-[8px] font-bold text-white bg-red-500 px-1.5 py-0.5 rounded uppercase tracking-wider">Solenidade</span>}
+                                </div>
+                                <h4 className="font-serif font-bold text-sm md:text-base text-parish-dark leading-tight group-hover:text-parish-terracotta transition-colors line-clamp-2">
+                                    {evt.titulo}
+                                </h4>
+                                <div className="text-xs text-gray-500 font-medium flex flex-wrap gap-2 mt-1">
+                                    {evt.hora && <span className="flex items-center gap-1"><Clock size={10}/> {evt.hora}</span>}
+                                    {evt.local && <span className="flex items-center gap-1"><MapPin size={10}/> {evt.local}</span>}
+                                </div>
+                            </div>
+                        </Link>
+                        )
+                    }) : (
+                        <div className="col-span-2 text-center py-8 text-gray-400">Nenhum evento em destaque.</div>
+                    )}
+                </div>
 
-                        {/* Seta some no mobile muito pequeno pra dar espaço pro texto */}
-                        <div className="hidden sm:flex w-10 h-10 rounded-full border border-gray-100 items-center justify-center text-gray-300 group-hover:border-parish-terracotta group-hover:text-parish-terracotta group-hover:bg-red-50 transition-all ml-2">
-                            <ArrowRight size={18} />
-                        </div>
+                {/* Botão bem no rodapé do container */}
+                <div className="mt-8 flex justify-end pt-4 border-t border-gray-50">
+                    <Link to="/agenda" className="text-xs font-bold text-parish-gold hover:text-parish-brown uppercase tracking-widest flex items-center gap-2 transition-colors group">
+                        Calendário Completo <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform"/>
                     </Link>
-                    )
-                }) : (
-                    <div className="bg-white p-8 md:p-12 rounded-2xl text-center border border-dashed border-gray-300 opacity-60">
-                        <p>Nenhum evento em destaque.</p>
-                    </div>
-                )}
+                </div>
              </div>
-
-             {/* Link mobile bem visível */}
-             <Link to="/agenda" className="md:hidden mt-6 block w-full text-center text-white font-bold text-xs uppercase tracking-widest bg-parish-terracotta py-4 rounded-xl shadow-lg transition-colors">
-               Ver Agenda Completa
-             </Link>
           </div>
 
         </div>

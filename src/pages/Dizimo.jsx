@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Heart, QrCode, Copy, Check, Building, Globe, Users, ArrowRight } from 'lucide-react';
 
+// IMPORTANDO SUA IMAGEM DE QR CODE
+// Certifique-se que o nome do arquivo na pasta assets/images é exatamente esse
+import qrCodeImg from '../assets/qr-code.jpeg'; 
+
 const Dizimo = () => {
   const [copied, setCopied] = useState(false);
 
-  // Copiar chave PIX
+  // A CHAVE PIX PARA O BOTÃO COPIAR (Se não tiver o Copia e Cola gigante, usamos a chave CNPJ)
+  const chavePixTexto = "63.089.825/0502-49";
+
   const handleCopy = () => {
-    navigator.clipboard.writeText("00.000.000/0001-00");
+    navigator.clipboard.writeText(chavePixTexto);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -36,7 +42,7 @@ const Dizimo = () => {
           </div>
         </div>
 
-        {/* --- OS 3 MOTIVOS (MANTIDO PORQUE GERA CREDIBILIDADE) --- */}
+        {/* --- OS 3 MOTIVOS --- */}
         <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
            
            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
@@ -65,7 +71,7 @@ const Dizimo = () => {
 
         </div>
 
-        {/* --- ÁREA DO PIX (SUPER DESTAQUE CENTRALIZADO) --- */}
+        {/* --- ÁREA DO PIX (COM IMAGEM FIXA) --- */}
         <div className="max-w-2xl mx-auto bg-parish-dark rounded-3xl shadow-2xl overflow-hidden relative">
             
             {/* Decoração */}
@@ -79,59 +85,58 @@ const Dizimo = () => {
                 </div>
 
                 <h2 className="text-3xl font-serif font-bold mb-2">Contribuição Digital</h2>
-                <p className="text-white/60 text-sm mb-8">Faça sua oferta segura via PIX</p>
+                <p className="text-white/60 text-sm mb-8">Abra o app do seu banco e escaneie</p>
 
-                {/* Bloco Branco do QR Code */}
-                <div className="bg-white text-parish-dark p-6 rounded-2xl inline-block shadow-lg mb-8 group">
-                    <QrCode size={180} className="mx-auto mix-blend-multiply opacity-90"/>
-                    <p className="text-[10px] font-bold text-gray-400 mt-3 uppercase tracking-widest group-hover:text-parish-terracotta transition-colors">
-                        Leia no app do banco
+                {/* IMAGEM DO QR CODE */}
+                <div className="bg-white p-4 rounded-2xl inline-block shadow-lg mb-8 group hover:scale-105 transition-transform duration-500">
+                    <img 
+                      src={qrCodeImg} 
+                      alt="QR Code do PIX"
+                      className="w-48 h-auto md:w-64 md:h-auto mx-auto" 
+                    />
+                    <p className="text-[10px] font-bold text-gray-400 mt-2 uppercase tracking-widest">
+                        Confirme os dados antes de pagar
                     </p>
                 </div>
 
-                {/* Copiar e Colar */}
+                {/* Copiar e Colar (Chave) */}
                 <div className="space-y-3 max-w-sm mx-auto">
                     <p className="text-xs font-bold text-parish-gold uppercase tracking-widest opacity-80">
-                        Chave PIX (CNPJ)
+                        Chave CNPJ
                     </p>
                     <button 
                         onClick={handleCopy}
-                        className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-4 flex items-center justify-between group transition-all backdrop-blur-md"
+                        className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-4 flex items-center justify-between group transition-all backdrop-blur-md cursor-pointer"
                     >
-                        <span className="font-mono text-xl font-bold tracking-wider truncate">00.000.000/0001-00</span>
-                        {copied ? <Check className="text-green-400" /> : <Copy className="text-white/70 group-hover:text-white" />}
+                        <span className="font-mono text-lg font-bold tracking-wider truncate mr-2 select-all">
+                          {chavePixTexto}
+                        </span>
+                        {copied ? <Check className="text-green-400 shrink-0" /> : <Copy className="text-white/70 group-hover:text-white shrink-0" />}
                     </button>
+                    
                     <p className="text-xs h-4 font-medium transition-colors" style={{color: copied ? '#4ade80' : '#ffffff60'}}>
-                        {copied ? "Chave copiada com sucesso!" : "Clique para copiar"}
+                        {copied ? "Chave copiada!" : "Toque para copiar a chave"}
                     </p>
                 </div>
 
                 {/* Rodapé do Cartão */}
-                <div className="mt-10 pt-8 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm text-white/50">
-                    <div className="text-center md:text-left">
-                        <span className="block font-bold text-white mb-1">Dados Bancários</span>
-                        Bradesco (237) <br/>
-                        Ag: 0000 | CC: 00000-0
-                    </div>
-                    <div className="text-center md:text-right">
-                        <span className="block font-bold text-white mb-1">Favorecido</span>
-                        Paróquia São Miguel Arcanjo <br/>
-                        CNPJ: 00.000.000/0001-00
-                    </div>
+                <div className="mt-8 pt-6 border-t border-white/10 text-xs md:text-sm text-white/50 space-y-1">
+                    <p className="uppercase tracking-wide font-bold text-white">Paróquia São Miguel Arcanjo</p>
+                    <p>Mitra Arquidiocesana de São Paulo</p>
                 </div>
 
             </div>
         </div>
 
-        {/* Botão de Enviar Comprovante (Opcional, leva pro contato) */}
+        {/* Botão de Enviar Comprovante */}
         <div className="text-center mt-12">
             <a 
-                href={`https://wa.me/551122537499?text=Ola, gostaria de enviar o comprovante de uma doação.`}
+                href={`https://wa.me/551150505716?text=Ola, gostaria de enviar o comprovante de uma doação para a Paróquia.`}
                 target="_blank" 
                 rel="noreferrer" 
                 className="inline-flex items-center gap-2 text-parish-terracotta hover:text-parish-dark font-bold text-sm uppercase tracking-wide border-b border-parish-terracotta/30 hover:border-parish-dark pb-1 transition-all"
             >
-                Enviar Comprovante <ArrowRight size={16}/>
+                Enviar Comprovante (WhatsApp) <ArrowRight size={16}/>
             </a>
         </div>
 

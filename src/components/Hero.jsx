@@ -48,12 +48,16 @@ const Hero = () => {
           Sede nosso refúgio contra as maldades <br className="hidden md:block"/> e ciladas do demônio.
         </p>
 
-        {/* Botões */}
+         {/* BOTÕES COM OS LINKS CERTOS AGORA */}
         <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-5 animate-[fadeInUp_1s_ease-out_0.6s]">
-           <button className="px-8 py-4 bg-parish-terracotta hover:bg-red-900 text-white font-bold tracking-widest text-sm uppercase rounded-full shadow-2xl shadow-red-900/30 transition-all hover:scale-105 border border-transparent">
-             Horários de Missa
-           </button>
+           {/* Link para a página de Agenda */}
+           <Link to="/agenda">
+             <button className="w-full sm:w-auto px-8 py-4 bg-parish-terracotta hover:bg-red-900 text-white font-bold tracking-widest text-sm uppercase rounded-full shadow-2xl shadow-red-900/30 transition-all hover:scale-105 border border-transparent">
+               Horários de Missa
+             </button>
+           </Link>
            
+           {/* Link para a página de Doação */}
            <Link to="/dizimo">
               <button className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white text-white hover:text-parish-dark border border-white font-bold tracking-widest text-sm uppercase rounded-full shadow-2xl backdrop-blur-md transition-all hover:scale-105">
                 Faça uma Doação

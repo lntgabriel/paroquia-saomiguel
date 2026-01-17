@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Clock, Navigation, X, ChevronRight, Copy, Check } from 'lucide-react';
 
-// FOTOS (Certifique-se que elas existem na pasta src/assets/comunidades/)
+// FOTOS (Mantido o mesmo import de antes)
 import imgMatriz from '../assets/comunidades/matriz.jpg';
 import imgCoracao from '../assets/comunidades/coracao.jpg';
 import imgNatividade from '../assets/comunidades/natividade.jpg';
@@ -15,7 +15,6 @@ const Comunidades = () => {
   const [selectedCom, setSelectedCom] = useState(null);
   const [copied, setCopied] = useState(false);
 
-  // --- DADOS ATUALIZADOS 2026 ---
   const comunidades = [
     {
       id: 1,
@@ -24,13 +23,13 @@ const Comunidades = () => {
       cep: "08345-200",
       bairro: "Jardim da Conquista, SP",
       img: imgMatriz,
-      // Horários atualizados
       missas: [
         "Domingo: 08h00 e 10h00",
-        "Quarta: 19h30",
-        "Sexta: 20h00",
-        "Todo dia 29: 20h00 (Votiva)"
+        "Quarta: 19h30 (Normal) | 20h00 (1ª Quarta + Adoração)",
+        "Última Sexta do Mês: 20h00",
+        "Todo dia 29: 20h00 (Votiva São Miguel)"
       ],
+      obs: "Confissões: Sábado 9h-11h30 | Quarta 17h-19h",
       padroeiro: "29 de Setembro"
     },
     {
@@ -40,7 +39,6 @@ const Comunidades = () => {
       cep: "08343-000",
       bairro: "Jardim da Conquista, SP",
       img: imgCoracao,
-      // Horários atualizados
       missas: [
         "Sábado: 19h30",
         "1ª Sexta do mês: 20h00"
@@ -54,7 +52,6 @@ const Comunidades = () => {
       cep: "08343-200",
       bairro: "Jardim da Conquista, SP",
       img: imgNatividade,
-      // Horários atualizados
       missas: [
         "Domingo: 19h30"
       ],
@@ -67,7 +64,6 @@ const Comunidades = () => {
       cep: "08343-350",
       bairro: "Jardim da Conquista, SP",
       img: imgRita,
-      // Horários atualizados
       missas: [
         "Domingo: 18h00"
       ],
@@ -80,7 +76,6 @@ const Comunidades = () => {
       cep: "08343-440",
       bairro: "Jardim da Conquista, SP",
       img: imgImaculada,
-      // Horários atualizados
       missas: [
         "Domingo: 10h00",
         "Quinta: 20h00"
@@ -94,7 +89,6 @@ const Comunidades = () => {
       cep: "08347-640",
       bairro: "Jardim da Conquista, SP",
       img: imgEdwiges,
-      // Horários atualizados
       missas: [
         "Domingo: 18h00"
       ],
@@ -107,7 +101,6 @@ const Comunidades = () => {
       cep: "08346-590",
       bairro: "Jardim da Conquista, SP",
       img: imgCarmo,
-      // Horários atualizados
       missas: [
         "Sábado: 20h00"
       ],
@@ -120,23 +113,20 @@ const Comunidades = () => {
       cep: "", // Sem CEP
       bairro: "Jardim da Conquista, SP",
       img: imgDivino,
-      // Horários atualizados
       missas: [
         "Sábado: 18h00"
       ],
       padroeiro: "Pentecostes",
-      obs: "Localização aproximada (não mapeada)"
+      obs: "Localização aproximada"
     }
   ];
 
-  // Copiar endereço
   const handleCopyAddr = (addr) => {
     navigator.clipboard.writeText(addr);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
-  // Abrir GPS
   const handleNavigate = (addr) => {
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr)}`;
     window.open(url, '_blank');
@@ -144,21 +134,18 @@ const Comunidades = () => {
 
   return (
     <div className="min-h-screen bg-[#f4f1ea] pt-24 md:pt-32 pb-32 md:pb-28 px-4 relative">
-      
       <div className="max-w-7xl mx-auto">
         
-        {/* Cabeçalho */}
         <div className="text-center mb-12 md:mb-16">
           <span className="text-parish-terracotta font-bold tracking-[0.2em] text-xs uppercase block mb-2">Unidos em Cristo</span>
           <h1 className="text-3xl md:text-5xl font-serif font-bold text-parish-dark">
             Nossas Comunidades
           </h1>
           <p className="mt-3 md:mt-4 text-sm md:text-lg text-gray-500 max-w-xl mx-auto">
-            "Onde dois ou mais estiverem reunidos em meu nome, eu estarei no meio deles." (Mt 18, 20).
+            "Onde dois ou mais estiverem reunidos em meu nome, eu estarei no meio deles."
           </p>
         </div>
 
-        {/* Grid de Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {comunidades.map((com) => (
             <div 
@@ -166,9 +153,7 @@ const Comunidades = () => {
               className="bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100"
               onClick={() => setSelectedCom(com)}
             >
-              {/* Foto */}
               <div className="h-40 md:h-48 overflow-hidden relative bg-parish-dark">
-                 {/* Fallback caso a imagem não carregue: BG Escuro */}
                  <img src={com.img} alt={com.nome} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                  <div className="absolute bottom-3 left-4 right-4">
@@ -178,7 +163,6 @@ const Comunidades = () => {
                  </div>
               </div>
 
-              {/* Corpo */}
               <div className="p-4 md:p-5 flex-1 flex flex-col">
                  <div className="flex items-start gap-2 mb-4 text-sm text-gray-500">
                     <MapPin size={16} className="mt-0.5 shrink-0 text-parish-gold" />
@@ -198,17 +182,11 @@ const Comunidades = () => {
 
       </div>
 
-      {/* --- MODAL DETALHES --- */}
       {selectedCom && (
         <div className="fixed inset-0 z-[70] flex items-end md:items-center justify-center p-0 md:p-4">
-            
-            {/* Overlay */}
             <div className="absolute inset-0 bg-parish-dark/90 backdrop-blur-sm" onClick={() => setSelectedCom(null)}></div>
             
-            {/* Modal - Mobile Bottom Sheet style */}
             <div className="relative bg-white w-full md:max-w-4xl h-[85vh] md:h-auto md:max-h-[90vh] overflow-y-auto rounded-t-3xl md:rounded-3xl shadow-2xl flex flex-col md:flex-row animate-slideUp md:animate-scaleIn">
-                
-                {/* Botão fechar */}
                 <button 
                     onClick={() => setSelectedCom(null)} 
                     className="absolute top-4 right-4 z-20 p-2 bg-black/50 text-white rounded-full hover:bg-black transition-colors"
@@ -216,7 +194,6 @@ const Comunidades = () => {
                     <X size={20} />
                 </button>
 
-                {/* COLUNA ESQUERDA: Imagem + Mapa */}
                 <div className="w-full md:w-1/2 bg-gray-100 flex flex-col min-h-[250px] md:min-h-[400px]">
                     <div className="h-1/2 md:flex-1 overflow-hidden relative">
                         <img src={selectedCom.img} className="w-full h-full object-cover"/>
@@ -239,48 +216,25 @@ const Comunidades = () => {
                     </div>
                 </div>
 
-                {/* COLUNA DIREITA: Infos */}
                 <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col bg-white">
-                    
-                    {/* Barrinha mobile */}
                     <div className="md:hidden w-12 h-1.5 bg-gray-200 rounded-full mx-auto mb-6"></div>
-
-                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-parish-dark mb-1 leading-tight">
-                        {selectedCom.nome}
-                    </h2>
+                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-parish-dark mb-1 leading-tight">{selectedCom.nome}</h2>
                     <p className="text-xs font-bold text-parish-terracotta uppercase tracking-wide mb-6">Paróquia São Miguel Arcanjo</p>
                     
                     <div className="space-y-6">
-                        
-                        {/* Bloco Endereço */}
                         <div>
                             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-1"><MapPin size={14}/> Localização</h4>
                             <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                                {selectedCom.endereco}<br/>
-                                {selectedCom.bairro} {selectedCom.cep && `— ${selectedCom.cep}`}
+                                {selectedCom.endereco}<br/> {selectedCom.bairro}
                             </p>
-                            
                             <div className="flex gap-2">
-                                <button 
-                                    onClick={() => handleNavigate(selectedCom.endereco + ", " + selectedCom.bairro)}
-                                    className="text-xs bg-parish-dark text-white px-4 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-black transition-colors shadow-lg flex-1 justify-center md:flex-none"
-                                >
-                                    <Navigation size={14}/> Como Chegar
-                                </button>
-                                <button 
-                                    onClick={() => handleCopyAddr(selectedCom.endereco)}
-                                    className="text-xs border border-gray-200 text-gray-600 px-4 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-gray-50 transition-colors"
-                                >
-                                    {copied ? <Check size={14} className="text-green-600"/> : <Copy size={14}/>}
-                                </button>
+                                <button onClick={() => handleNavigate(selectedCom.endereco + ", " + selectedCom.bairro)} className="text-xs bg-parish-dark text-white px-4 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-black transition-colors shadow-lg flex-1 justify-center md:flex-none"><Navigation size={14}/> Como Chegar</button>
+                                <button onClick={() => handleCopyAddr(selectedCom.endereco)} className="text-xs border border-gray-200 text-gray-600 px-4 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-gray-50 transition-colors">{copied ? <Check size={14} className="text-green-600"/> : <Copy size={14}/>}</button>
                             </div>
                         </div>
 
-                        {/* Bloco Missas */}
                         <div className="bg-[#f9f7f4] p-5 rounded-xl border border-[#ebe5de]">
-                            <h4 className="text-xs font-bold text-parish-gold uppercase tracking-widest mb-4 flex items-center gap-2">
-                                <Clock size={16} className="text-parish-brown"/> Horários de Missa
-                            </h4>
+                            <h4 className="text-xs font-bold text-parish-gold uppercase tracking-widest mb-4 flex items-center gap-2"><Clock size={16} className="text-parish-brown"/> Horários</h4>
                             <ul className="space-y-2.5">
                                 {selectedCom.missas.map((m, idx) => (
                                     <li key={idx} className="flex items-center gap-3 text-sm text-parish-brown font-medium pb-2 border-b border-gray-200/50 last:border-0 last:pb-0">
@@ -293,16 +247,14 @@ const Comunidades = () => {
 
                         {selectedCom.obs && (
                             <p className="text-[10px] md:text-xs text-orange-600 bg-orange-50 p-2 rounded text-center border border-orange-100">
-                                ⚠️ {selectedCom.obs}
+                                ℹ️ {selectedCom.obs}
                             </p>
                         )}
-
                     </div>
                 </div>
             </div>
         </div>
       )}
-
     </div>
   );
 };

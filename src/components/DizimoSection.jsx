@@ -42,7 +42,7 @@ const DizimoSection = () => {
              </Link>
              
              <p className="text-xs text-gray-400 text-center md:text-right uppercase tracking-wider font-bold">
-                Via PIX ou Transferência
+                Via PIX.
              </p>
           </div>
 

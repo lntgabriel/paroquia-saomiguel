@@ -29,7 +29,7 @@ export const liturgiaDB = [
         dia: 'Segunda-feira - 1ª Semana do Tempo Comum',
         leitura1: '1Sm 1,1-8',
         salmo: 'Sl 115',
-        evangelho: 'Mk 1,14-20',
+        evangelho: 'Mt 1,14-20',
         frase: 'Convertei-vos e crede no Evangelho.'
     },
     {
@@ -38,7 +38,7 @@ export const liturgiaDB = [
         dia: 'Terça-feira - 1ª Semana do Tempo Comum',
         leitura1: '1Sm 1,9-20',
         salmo: '1Sm 2,1.4-8',
-        evangelho: 'Mk 1,21b-28',
+        evangelho: 'Mt 1,21b-28',
         frase: 'Ensinava como quem tem autoridade.'
     },
     {
@@ -47,7 +47,7 @@ export const liturgiaDB = [
         dia: 'Quarta-feira - 1ª Semana do Tempo Comum',
         leitura1: '1Sm 3,1-10.19-20',
         salmo: 'Sl 39',
-        evangelho: 'Mk 1,29-39',
+        evangelho: 'Mt 1,29-39',
         frase: 'De madrugada, retirou-se a um lugar deserto para orar.'
     },
     {
@@ -56,7 +56,7 @@ export const liturgiaDB = [
         dia: 'Quinta-feira - 1ª Semana do Tempo Comum',
         leitura1: '1Sm 4,1-11',
         salmo: 'Sl 43',
-        evangelho: 'Mk 1,40-45',
+        evangelho: 'Mt 1,40-45',
         frase: 'Se queres, tens o poder de curar-me.'
     },
     {
@@ -65,7 +65,7 @@ export const liturgiaDB = [
         dia: 'Sexta-feira - 1ª Semana do Tempo Comum',
         leitura1: '1Sm 8,4-7.10-22a',
         salmo: 'Sl 88',
-        evangelho: 'Mk 2,1-12',
+        evangelho: 'Mt 2,1-12',
         frase: 'Filho, os teus pecados estão perdoados.'
     },
     {
@@ -74,7 +74,7 @@ export const liturgiaDB = [
         dia: 'Memória de Santo Antão, Abade',
         leitura1: '1Sm 9,1-4.17-19; 10,1a',
         salmo: 'Sl 20',
-        evangelho: 'Mk 2,13-17',
+        evangelho: 'Mt 2,13-17',
         frase: 'Não vim chamar os justos, mas os pecadores.'
     },
     {
@@ -93,7 +93,7 @@ export const liturgiaDB = [
         dia: 'Segunda-feira - 2ª Semana do Tempo Comum',
         leitura1: '1Sm 15,16-23',
         salmo: 'Sl 49',
-        evangelho: 'Mk 2,18-22',
+        evangelho: 'Mt 2,18-22',
         frase: 'Dias virão em que o noivo lhes será tirado.'
     },
     {
@@ -102,7 +102,7 @@ export const liturgiaDB = [
         dia: 'São Sebastião, Mártir',
         leitura1: '1Sm 16,1-13',
         salmo: 'Sl 88',
-        evangelho: 'Mk 2,23-28',
+        evangelho: 'Mt 2,23-28',
         frase: 'O Filho do Homem é senhor também do sábado.'
     },
     {
@@ -111,7 +111,7 @@ export const liturgiaDB = [
         dia: 'Santa Inês, Virgem e Mártir',
         leitura1: '1Sm 17,32-33.37.40-51',
         salmo: 'Sl 143',
-        evangelho: 'Mk 3,1-6',
+        evangelho: 'Mt 3,1-6',
         frase: 'Estende a tua mão.'
     },
     {
@@ -120,7 +120,7 @@ export const liturgiaDB = [
         dia: 'Quinta-feira - 2ª Semana do Tempo Comum',
         leitura1: '1Sm 18,6-9; 19,1-7',
         salmo: 'Sl 55',
-        evangelho: 'Mk 3,7-12',
+        evangelho: 'Mt 3,7-12',
         frase: 'Espíritos impuros caíam a seus pés gritando: Tu és o Filho de Deus.'
     },
     {
@@ -129,7 +129,7 @@ export const liturgiaDB = [
         dia: 'Sexta-feira - 2ª Semana do Tempo Comum',
         leitura1: '1Sm 24,3-21',
         salmo: 'Sl 56',
-        evangelho: 'Mk 3,13-19',
+        evangelho: 'Mt 3,13-19',
         frase: 'Chamou os que ele quis para estarem com ele.'
     },
     {
@@ -138,7 +138,7 @@ export const liturgiaDB = [
         dia: 'São Francisco de Sales, Bispo',
         leitura1: '2Sm 1,1-4.11-12.19.23-27',
         salmo: 'Sl 79',
-        evangelho: 'Mk 3,20-21',
+        evangelho: 'Mt 3,20-21',
         frase: 'Ele está fora de si.'
     },
     {
@@ -147,7 +147,7 @@ export const liturgiaDB = [
         dia: 'Conversão de São Paulo, Apóstolo',
         leitura1: 'At 22,3-16',
         salmo: 'Sl 116',
-        evangelho: 'Mk 16,15-18',
+        evangelho: 'Mt 16,15-18',
         frase: 'Ide por todo o mundo e pregai o Evangelho.'
     },
     {
@@ -156,7 +156,7 @@ export const liturgiaDB = [
         dia: 'Santos Timóteo e Tito, Bispos',
         leitura1: '2Tm 1,1-8',
         salmo: 'Sl 95',
-        evangelho: 'Lk 10,1-9',
+        evangelho: 'Lc 10,1-9',
         frase: 'A messe é grande, mas os operários são poucos.'
     },
     {
@@ -165,7 +165,7 @@ export const liturgiaDB = [
         dia: 'Terça-feira - 3ª Semana do Tempo Comum',
         leitura1: '2Sm 6,12b-15.17-19',
         salmo: 'Sl 23',
-        evangelho: 'Mk 3,31-35',
+        evangelho: 'Mt 3,31-35',
         frase: 'Quem faz a vontade de Deus, esse é meu irmão, minha irmã e minha mãe.'
     },
     {
@@ -174,7 +174,7 @@ export const liturgiaDB = [
         dia: 'Santo Tomás de Aquino, Presbítero',
         leitura1: '2Sm 7,4-17',
         salmo: 'Sl 88',
-        evangelho: 'Mk 4,1-20',
+        evangelho: 'Mt 4,1-20',
         frase: 'O semeador saiu a semear.'
     },
     {
@@ -183,7 +183,7 @@ export const liturgiaDB = [
         dia: 'Quinta-feira - 3ª Semana do Tempo Comum',
         leitura1: '2Sm 7,18-19.24-29',
         salmo: 'Sl 131',
-        evangelho: 'Mk 4,21-25',
+        evangelho: 'Mt 4,21-25',
         frase: 'A lâmpada não vem para ficar debaixo da cama.'
     },
     {
@@ -192,7 +192,7 @@ export const liturgiaDB = [
         dia: 'Sexta-feira - 3ª Semana do Tempo Comum',
         leitura1: '2Sm 11,1-4a.5-10a.13-17',
         salmo: 'Sl 50',
-        evangelho: 'Mk 4,26-34',
+        evangelho: 'Mt 4,26-34',
         frase: 'O Reino de Deus é como um grão de mostarda.'
     },
     {
@@ -201,7 +201,7 @@ export const liturgiaDB = [
         dia: 'São João Bosco, Presbítero',
         leitura1: '2Sm 12,1-7a.10-17',
         salmo: 'Sl 50',
-        evangelho: 'Mk 4,35-41',
+        evangelho: 'Mt 4,35-41',
         frase: 'Por que sois tão medrosos? Ainda não tendes fé?'
     },
 
@@ -224,7 +224,7 @@ export const liturgiaDB = [
         dia: 'Apresentação do Senhor',
         leitura1: 'Ml 3,1-4',
         salmo: 'Sl 23',
-        evangelho: 'Lk 2,22-40',
+        evangelho: 'Lc 2,22-40',
         frase: 'Meus olhos viram a tua salvação.'
     },
     {
@@ -233,7 +233,7 @@ export const liturgiaDB = [
         dia: 'Terça-feira - 4ª Semana do Tempo Comum',
         leitura1: '2Sm 18,9-10.14b.24-25a.30–19,3',
         salmo: 'Sl 85',
-        evangelho: 'Mk 5,21-43',
+        evangelho: 'Mt 5,21-43',
         frase: 'Menina, eu te ordeno, levanta-te!'
     },
     {
@@ -242,7 +242,7 @@ export const liturgiaDB = [
         dia: 'Quarta-feira - 4ª Semana do Tempo Comum',
         leitura1: '2Sm 24,2.9-17',
         salmo: 'Sl 31',
-        evangelho: 'Mk 6,1-6',
+        evangelho: 'Mt 6,1-6',
         frase: 'Um profeta só não é estimado em sua própria pátria.'
     },
     {
@@ -251,7 +251,7 @@ export const liturgiaDB = [
         dia: 'Santa Águeda, Virgem e Mártir',
         leitura1: '1Rs 2,1-4.10-12',
         salmo: '1Cr 29',
-        evangelho: 'Mk 6,7-13',
+        evangelho: 'Mt 6,7-13',
         frase: 'Enviou-os dois a dois.'
     },
     {
@@ -260,7 +260,7 @@ export const liturgiaDB = [
         dia: 'São Paulo Miki e Companheiros, Mártires',
         leitura1: 'Sr 47,2-11',
         salmo: 'Sl 17',
-        evangelho: 'Mk 6,14-29',
+        evangelho: 'Mt 6,14-29',
         frase: 'É João, a quem eu decapitei, que ressuscitou.'
     },
     {
@@ -269,7 +269,7 @@ export const liturgiaDB = [
         dia: 'Sábado - 4ª Semana do Tempo Comum',
         leitura1: '1Rs 3,4-13',
         salmo: 'Sl 118',
-        evangelho: 'Mk 6,30-34',
+        evangelho: 'Mt 6,30-34',
         frase: 'Eram como ovelhas sem pastor.'
     },
     {
@@ -288,7 +288,7 @@ export const liturgiaDB = [
         dia: 'Segunda-feira - 5ª Semana do Tempo Comum',
         leitura1: '1Rs 8,1-7.9-13',
         salmo: 'Sl 131',
-        evangelho: 'Mk 6,53-56',
+        evangelho: 'Mt 6,53-56',
         frase: 'Todos os que o tocavam ficavam curados.'
     },
     {
@@ -297,7 +297,7 @@ export const liturgiaDB = [
         dia: 'Santa Escolástica, Virgem',
         leitura1: '1Rs 8,22-23.27-30',
         salmo: 'Sl 83',
-        evangelho: 'Mk 7,1-13',
+        evangelho: 'Mt 7,1-13',
         frase: 'Este povo me honra com os lábios, mas seu coração está longe.'
     },
     {
@@ -306,7 +306,7 @@ export const liturgiaDB = [
         dia: 'Nossa Senhora de Lourdes',
         leitura1: '1Rs 10,1-10',
         salmo: 'Sl 36',
-        evangelho: 'Mk 7,14-23',
+        evangelho: 'Mt 7,14-23',
         frase: 'O que sai do homem é que o torna impuro.'
     },
     {
@@ -315,7 +315,7 @@ export const liturgiaDB = [
         dia: 'Quinta-feira - 5ª Semana do Tempo Comum',
         leitura1: '1Rs 11,4-13',
         salmo: 'Sl 105',
-        evangelho: 'Mk 7,24-30',
+        evangelho: 'Mt 7,24-30',
         frase: 'Até os cachorrinhos, debaixo da mesa, comem as migalhas.'
     },
     {
@@ -324,7 +324,7 @@ export const liturgiaDB = [
         dia: 'Sexta-feira - 5ª Semana do Tempo Comum',
         leitura1: '1Rs 11,29-32; 12,19',
         salmo: 'Sl 80',
-        evangelho: 'Mk 7,31-37',
+        evangelho: 'Mt 7,31-37',
         frase: 'Tudo ele tem feito bem: faz os surdos ouvirem e os mudos falarem.'
     },
     {
@@ -333,7 +333,7 @@ export const liturgiaDB = [
         dia: 'Santos Cirilo e Metódio',
         leitura1: '1Rs 12,26-32; 13,33-34',
         salmo: 'Sl 105',
-        evangelho: 'Mk 8,1-10',
+        evangelho: 'Mt 8,1-10',
         frase: 'Tenho compaixão dessa multidão.'
     },
     {
@@ -352,7 +352,7 @@ export const liturgiaDB = [
         dia: 'Segunda-feira - 6ª Semana do Tempo Comum',
         leitura1: 'Tg 1,1-11',
         salmo: 'Sl 118',
-        evangelho: 'Mk 8,11-13',
+        evangelho: 'Mt 8,11-13',
         frase: 'Nenhum sinal será dado a esta geração.'
     },
     {
@@ -361,7 +361,7 @@ export const liturgiaDB = [
         dia: 'Terça-feira de Carnaval',
         leitura1: 'Tg 1,12-18',
         salmo: 'Sl 93',
-        evangelho: 'Mk 8,14-21',
+        evangelho: 'Mt 8,14-21',
         frase: 'Ainda não compreendeis, nem entendeis?'
     },
     {

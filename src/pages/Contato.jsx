@@ -91,10 +91,10 @@ ${formData.message}
 
               {/* Redes */}
               <div className="mt-10 md:mt-12 flex gap-4 pt-8 border-t border-white/10">
-                <a href="#" className="p-2.5 bg-white/5 border border-white/10 rounded-full hover:bg-parish-terracotta hover:border-parish-terracotta hover:text-white transition-all text-gray-300">
+                <a href="https://www.instagram.com/paroquiasaomigueljc/" className="p-2.5 bg-white/5 border border-white/10 rounded-full hover:bg-parish-terracotta hover:border-parish-terracotta hover:text-white transition-all text-gray-300">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="p-2.5 bg-white/5 border border-white/10 rounded-full hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all text-gray-300">
+                <a href="https://www.facebook.com/pasmarc06" className="p-2.5 bg-white/5 border border-white/10 rounded-full hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all text-gray-300">
                   <Facebook size={20} />
                 </a>
               </div>
