@@ -106,9 +106,9 @@ const Dizimo = () => {
                     </p>
                     <button 
                         onClick={handleCopy}
-                        className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-4 flex items-center justify-between group transition-all backdrop-blur-md cursor-pointer"
+                        className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-4 flex items-center justify-between group transition-all backdrop-blur-md cursor-pointer "
                     >
-                        <span className="font-mono text-lg font-bold tracking-wider truncate mr-2 select-all">
+                        <span className="space-y-3 max-w-sm mx-auto text-left font-mono font-semibold tracking-wide">
                           {chavePixTexto}
                         </span>
                         {copied ? <Check className="text-green-400 shrink-0" /> : <Copy className="text-white/70 group-hover:text-white shrink-0" />}
