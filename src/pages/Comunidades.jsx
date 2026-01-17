@@ -26,7 +26,7 @@ const Comunidades = () => {
       missas: [
         "Domingo: 08h00 e 10h00",
         "Quarta: 19h30 (Normal) | 20h00 (1ª Quarta + Adoração)",
-        "Última Sexta do Mês: 20h00",
+        "A partir da 2ª sexta do Mês: 20h00",
         "Todo dia 29: 20h00 (Votiva São Miguel)"
       ],
       obs: "Confissões: Sábado 9h-11h30 | Quarta 17h-19h",

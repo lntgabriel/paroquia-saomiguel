@@ -145,7 +145,6 @@ const AgendaPreview = () => {
                             
                             <div className="min-w-0 flex flex-col justify-center"> 
                                 <div className="flex items-center gap-2 mb-1">
-                                    {evt.tipo.includes('festa') && <span className="text-[8px] font-bold text-white bg-red-500 px-1.5 py-0.5 rounded uppercase tracking-wider">Solenidade</span>}
                                 </div>
                                 <h4 className="font-serif font-bold text-sm md:text-base text-parish-dark leading-tight group-hover:text-parish-terracotta transition-colors line-clamp-2">
                                     {evt.titulo}
