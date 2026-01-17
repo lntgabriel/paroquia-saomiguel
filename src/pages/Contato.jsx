@@ -82,7 +82,7 @@ ${formData.message}
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider opacity-60">Horário</span>
                     <div className="mt-1 text-sm space-y-1">
-                       <p><strong className="text-white">Seg - Sex:</strong> 08h às 12h | 13h às 17h</p>
+                       <p><strong className="text-white">Ter - Sex:</strong> 13h às 20h</p>
                        <p><strong className="text-white">Sábado:</strong> 08h às 12h</p>
                     </div>
                   </div>
