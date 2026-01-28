@@ -175,7 +175,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 7,4-17',
         salmo: 'Sl 88',
         evangelho: 'Mt 4,1-20',
-        frase: 'O semeador saiu a semear.'
+        frase: 'Naqueles dias a palavra do Senhor foi dirigida a Nata nestes termos Vai dizer ao meu servo Davi assim fala o Senhor Porventura es tu que me construiras uma casa para eu habitar Pois eu nunca morei numa casa desde que tirei do Egito os filhos de Israel ate ao dia de hoje mas tenho vagueado em tendas e abrigos Por todos os lugares onde andei com os filhos de Israel nunca disse a nenhum dos chefes que encarreguei de apascentar o meu povo por que nao me edificastes uma casa de cedro Agora diras ao meu servo Davi assim fala o Senhor Todo poderoso Fui eu que te tirei do pastoreio do meio das ovelhas para que fosses o chefe do meu povo Israel Estive contigo em toda parte por onde andaste e exterminei diante de ti todos os teus inimigos fazendo o teu nome tao celebre como o dos homens mais famosos da terra Vou preparar um lugar para o meu povo Israel eu o implantarei de modo que possa morar la sem jamais ser inquietado Os homens violentos nao tornarao a oprimi lo como outrora no tempo em que eu estabelecia juizes sobre o meu povo Israel Concedo te uma vida tranquila livrando te de todos os teus inimigos e o Senhor te anuncia que te fara uma casa Quando chegar o fim dos teus dias e repousares com teus pais entao suscitarei depois de ti um filho teu e confirmarei a sua realeza Sera ele que construira uma casa para o meu nome e eu firmarei para sempre o seu trono real Eu serei para ele um pai e ele sera para mim um filho Se ele proceder mal eu o castigarei com vara de homens e com golpes dos filhos dos homens Mas nao retirarei dele a minha graca como a retirei de Saul a quem expulsei da minha presenca Tua casa e teu reino serao estaveis para sempre diante de mim e teu trono sera firme para sempre Nata comunicou a Davi todas essas palavras e toda essa revelacao Palavra do Senhor'
     },
     {
         data: '2026-01-29',
@@ -184,7 +184,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 7,18-19.24-29',
         salmo: 'Sl 131',
         evangelho: 'Mt 4,21-25',
-        frase: 'A lâmpada não vem para ficar debaixo da cama.'
+        frase: 'Leitura do Segundo Livro de Samuel Depois que Natan falara a Davi o rei entrou no tabernaculo foi assentar se diante do Senhor e disse Quem sou eu Senhor Deus e o que e a minha familia para que me tenhas conduzido ate aqui Mas como isto te parecia pouco Senhor Deus ainda fizeste promessas a casa do teu servo para um futuro distante Porque esta e a lei do homem Senhor Deus Estabeleceste o teu povo Israel para que ele seja para sempre o teu povo e tu Senhor te tornaste o seu Deus Agora Senhor Deus cumpre para sempre a promessa que fizeste ao teu servo e a sua casa e faze como disseste Entao o teu nome sera exaltado para sempre e dirao O Senhor Todo poderoso e o Deus de Israel E a casa do teu servo Davi permanecera estavel na tua presenca Pois tu Senhor Todo poderoso Deus de Israel fizeste esta revelacao ao teu servo Eu te construirei uma casa Por isso o teu servo se animou a dirigir te esta oracao Agora Senhor Deus tu es Deus e tuas palavras sao verdadeiras pois que fizeste esta bela promessa ao teu servo abencoa entao a casa do teu servo para que ela permaneça para sempre na tua presenca Porque es tu Senhor Deus que falaste e e gracas a tua bencao que a casa do teu servo sera abencoada para sempre Palavra do Senhor'
     },
     {
         data: '2026-01-30',
@@ -193,7 +193,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 11,1-4a.5-10a.13-17',
         salmo: 'Sl 50',
         evangelho: 'Mt 4,26-34',
-        frase: 'O Reino de Deus é como um grão de mostarda.'
+        frase: 'Leitura do Segundo Livro de Samuel No ano seguinte na epoca em que os reis costumavam partir para a guerra Davi enviou Joab com os seus oficiais e todo o Israel e eles devastaram o pais dos amonitas e sitiaram Raba Mas Davi ficou em Jerusalem Um dia ao entardecer levantando se Davi de sua cama pos se a passear pelo terraco de sua casa e avistou dali uma mulher que se banhava Era uma mulher muito bonita Davi procurou saber quem era essa mulher e disseram lhe que era Betsabeia filha de Eliam mulher do hitita Urias Entao Davi enviou mensageiros para que a trouxessem Ela veio e ele deitou se com ela Em seguida Betsabeia voltou para casa Como ela concebesse mandou dizer a Davi estou gravida Davi mandou esta ordem a Joab manda me Urias o hitita E Joab mandou Urias a Davi Quando Urias chegou Davi pediu lhe noticias de Joab do exercito e da guerra E depois disse lhe desce a tua casa e lava os pes Urias saiu do palacio do rei e em seguida este enviou lhe um presente real Mas Urias dormiu a porta do palacio com os outros servos do seu amo e nao foi para casa Contaram entao a Davi Urias nao foi para sua casa Davi convidou o para comer e beber a sua mesa e o embriagou Mas ao entardecer ele retirou se e foi se deitar no seu leito em companhia dos servos do seu senhor e nao desceu para a sua casa Na manha seguinte Davi escreveu uma carta a Joab e mandou a pelas maos de Urias Dizia nela colocai Urias na frente onde o combate for mais violento e abandonai o para que seja ferido e morra Joab que sitiava a cidade colocou Urias no lugar onde sabia estarem os guerreiros mais valentes Os que defendiam a cidade sairam para atacar Joab e morreram alguns do exercito da guarda de Davi E morreu tambem Urias o hitita Palavra do Senhor'
     },
     {
         data: '2026-01-31',
@@ -202,7 +202,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 12,1-7a.10-17',
         salmo: 'Sl 50',
         evangelho: 'Mt 4,35-41',
-        frase: 'Por que sois tão medrosos? Ainda não tendes fé?'
+        frase: 'Leitura do Segundo Livro de Samuel Naqueles dias o Senhor mandou o profeta Nata a Davi Ele foi ter com o rei e lhe disse Numa cidade havia dois homens um rico e outro pobre O rico possuia ovelhas e bois em grande numero O pobre so possuia uma ovelha pequenina que tinha comprado e criado Ela crescera em sua casa junto com seus filhos comendo do seu pao bebendo do mesmo copo dormindo no seu regaco Era para ele como uma filha Veio um hospede a casa do homem rico e este nao quis tomar uma de suas ovelhas ou um de seus bois para preparar um banquete e dar de comer ao hospede que chegara Mas foi apoderou se da ovelhinha do pobre e preparou a para o visitante Davi ficou indignado contra esse homem e disse a Nata Pela vida do Senhor o homem que fez isso merece a morte Pagara quatro vezes o valor da ovelha por ter feito o que fez e nao ter tido compaixao Nata disse a Davi Esse homem es tu Assim diz o Senhor o Deus de Israel Por isso a espada jamais se afastara de tua casa porque me desprezaste e tomaste a mulher do hitita Urias para fazer dela a tua esposa Assim diz o Senhor Da tua propria casa farei surgir o mal contra ti e tomarei as tuas mulheres sob os teus olhos e as darei a um outro e ele se aproximara das tuas mulheres a luz do sol Tu fizeste tudo as escondidas Eu porem farei o que digo diante de todo o Israel e a luz do sol Davi disse a Nata Pequei contra o Senhor Nata respondeu O Senhor perdoou o teu pecado de modo que nao morreras Entretanto por teres ultrajado o Senhor com teu procedimento o filho que te nasceu morrera Nata voltou para a sua casa O Senhor feriu o filho que a mulher de Urias tinha dado a Davi e ele adoeceu gravemente Davi implorou a Deus pelo menino e fez um grande jejum e voltando para casa passou a noite deitado no chao Os anciaos do palacio insistiam com ele para que se levantasse do chao mas ele nao o quis fazer nem tomar com eles alimento algum Palavra do Senhor'
     },
 
     // ==========================================
@@ -216,7 +216,7 @@ export const liturgiaDB = [
         salmo: 'Sl 145',
         leitura2: '1Cor 1,26-31',
         evangelho: 'Mt 5,1-12a',
-        frase: 'Bem-aventurados os pobres em espírito.'
+        frase: 'Leitura da Profecia de Sofonias Buscai o Senhor humildes da terra que pondes em pratica seus preceitos praticai a justica procurai a humildade talvez achareis um refugio no dia da colera do Senhor E deixarei entre vos um punhado de homens humildes e pobres E no nome do Senhor pora sua esperanca o resto de Israel Eles nao cometerao iniquidades nem falarao mentiras nao se encontrara em sua boca uma lingua enganadora serao apascentados e repousarao e ninguem os molestara Palavra do Senhor'
     },
     {
         data: '2026-02-02',
@@ -225,7 +225,7 @@ export const liturgiaDB = [
         leitura1: 'Ml 3,1-4',
         salmo: 'Sl 23',
         evangelho: 'Lc 2,22-40',
-        frase: 'Meus olhos viram a tua salvação.'
+        frase: 'Leitura da Profecia de Malaquias Assim diz o Senhor Eis que envio meu anjo e ele ha de preparar o caminho para mim logo chegara ao seu templo o Dominador que tentais encontrar e o anjo da alianca que desejais Ei lo que vem diz o Senhor dos exercitos E quem podera fazer lhe frente no dia de sua chegada E quem podera resistir lhe quando ele aparecer Ele e como o fogo da forja e como a barrela dos lavadeiros Ele estara a postos como para fazer derreter e purificar a prata assim ele purificara os filhos de Levi e os refinara como ouro e como prata e eles poderao assim fazer oferendas justas ao Senhor Sera entao aceitavel ao Senhor a oblacao de Juda e de Jerusalem como nos primeiros tempos e nos anos antigos Palavra do Senhor'
     },
     {
         data: '2026-02-03',
@@ -234,7 +234,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 18,9-10.14b.24-25a.30–19,3',
         salmo: 'Sl 85',
         evangelho: 'Mt 5,21-43',
-        frase: 'Menina, eu te ordeno, levanta-te!'
+        frase: 'Leitura do Segundo Livro de Samuel Naqueles dias Absalão encontrou se por acaso na presenca dos homens de Davi Ia montado numa mula e esta meteu se sob a folhagem espessa de um grande carvalho A cabeca de Absalão ficou presa nos galhos da arvore de modo que ele ficou suspenso entre o ceu e a terra enquanto a mula em que ia montado passou adiante Alguem viu isto e informou Joab dizendo Vi Absalão suspenso num carvalho Joab tomou entao tres dardos e cravou os no peito de Absalão Davi estava sentado entre duas portas da cidade A sentinela que tinha subido ao terraco da porta sobre a muralha levantou os olhos e divisou um homem que vinha correndo sozinho Pos se a gritar e avisou o rei que disse Se ele vem so traz alguma boa nova O rei disse lhe Passa e espera aqui Tendo ele passado e estando no seu lugar apareceu o etiope e disse Trago te senhor meu rei a boa nova O Senhor te fez justica contra todos os que se tinham revoltado contra ti O rei perguntou ao etiope Vai tudo bem para o jovem Absalão E o etiope disse Tenham a sorte deste jovem os inimigos do rei meu senhor e todos os que se levantam contra ti para te fazer mal Entao o rei estremeceu subiu para a sala que esta acima da porta e caiu em pranto Dizia entre soluços Meu filho Absalão meu filho meu filho Absalão Por que nao morri eu em teu lugar Absalão meu filho meu filho Anunciaram a Joab que o rei estava chorando e lamentando se por causa do filho Assim a vitoria converteu se em luto naquele dia para todo o povo porque o povo soubera que o rei estava acabrunhado de dor por causa de seu filho Palavra do Senhor'
     },
     {
         data: '2026-02-04',
@@ -243,7 +243,7 @@ export const liturgiaDB = [
         leitura1: '2Sm 24,2.9-17',
         salmo: 'Sl 31',
         evangelho: 'Mt 6,1-6',
-        frase: 'Um profeta só não é estimado em sua própria pátria.'
+        frase: 'Leitura do Segundo Livro de Samuel Naqueles dias o rei Davi disse a Joab e aos chefes do seu exercito que estavam com ele Percorre todas as tribos de Israel desde Da ate Bersabeia e faze o recenseamento do povo para que eu saiba o seu numero Joab apresentou ao rei o resultado do recenseamento do povo havia em Israel oitocentos mil homens de guerra que manejavam a espada e em Juda quinhentos mil homens Depois que o povo foi recenseado Davi sentiu remorsos e disse ao Senhor Cometi um grande pecado ao fazer o que fiz mas perdoa a iniquidade do teu servo porque procedi como um grande insensato Pela manha quando Davi se levantou a palavra do Senhor foi dirigida ao profeta Gad vidente de Davi Vai dizer a Davi assim fala o Senhor dou te a escolher tres coisas escolhe aquela que queres que eu te envie Gad foi ter com Davi e disse Que preferes tres anos de fome na tua terra tres meses de derrotas diante dos inimigos que te perseguem ou tres dias de peste no pais Davi respondeu Estou em grande angustia E melhor cair nas maos do Senhor cuja misericordia e grande do que cair nas maos dos homens Davi escolheu a peste O Senhor mandou a peste a Israel e morreram setenta mil homens desde Da ate Bersabeia Quando o anjo estendeu a mao para exterminar Jerusalem o Senhor arrependeu se e disse Basta retira agora a tua mao Quando Davi viu o anjo disse Fui eu que pequei eu e que tenho a culpa Peço te que a tua mao se volte contra mim e contra a minha familia Palavra do Senhor'
     },
     {
         data: '2026-02-05',
@@ -252,7 +252,7 @@ export const liturgiaDB = [
         leitura1: '1Rs 2,1-4.10-12',
         salmo: '1Cr 29',
         evangelho: 'Mt 6,7-13',
-        frase: 'Enviou-os dois a dois.'
+        frase: 'Leitura do Primeiro Livro dos Reis Aproximando se o fim da sua vida Davi deu instrucoes a seu filho Salomao Vou seguir o caminho de todos os mortais Se corajoso e porta te como um homem Observa os preceitos do Senhor teu Deus andando em seus caminhos observando seus estatutos mandamentos preceitos e ensinamentos como estao escritos na lei de Moises E assim seras bem sucedido em tudo o que fizeres O Senhor cumprira a promessa que me fez dizendo Se teus filhos conservarem uma boa conduta caminhando com lealdade diante de mim jamais te faltara um sucessor no trono de Israel Davi adormeceu com seus pais e foi sepultado na cidade de Davi O tempo que Davi reinou em Israel foi de quarenta anos sete em Hebron e trinta e tres em Jerusalem Salomao sucedeu no trono a seu pai Davi e seu reino ficou solidamente estabelecido Palavra do Senhor'
     },
     {
         data: '2026-02-06',
@@ -261,7 +261,7 @@ export const liturgiaDB = [
         leitura1: 'Sr 47,2-11',
         salmo: 'Sl 17',
         evangelho: 'Mt 6,14-29',
-        frase: 'É João, a quem eu decapitei, que ressuscitou.'
+        frase: 'Leitura do Livro do Eclesiastico Como a gordura que se separa do sacrificio assim sobressai Davi entre os israelitas Brincou com leoes como se fossem cabritos e com ursos como se fossem cordeiros Ainda jovem matou o gigante e retirou do seu povo a desonra Ao levantar a mao com a pedra na funda abateu o orgulho de Golias Invocou o Senhor o Altissimo que deu forca ao seu braco direito e ele venceu um poderoso guerreiro Assim o glorificaram e o louvaram pelas bencaos do Senhor Pois esmagou os inimigos por toda a parte Em todas as suas obras dava gracas ao Santo Altissimo De todo o coracao louvava o Senhor Diante do altar colocou cantores Deu esplendor as festas e ordenou as solenidades O Senhor lhe perdoou os pecados exaltou para sempre o seu poder concedeu lhe a alianca real e um trono glorioso em Israel Palavra do Senhor'
     },
     {
         data: '2026-02-07',
@@ -270,7 +270,7 @@ export const liturgiaDB = [
         leitura1: '1Rs 3,4-13',
         salmo: 'Sl 118',
         evangelho: 'Mt 6,30-34',
-        frase: 'Eram como ovelhas sem pastor.'
+        frase: 'Leitura do Primeiro Livro dos Reis Naqueles dias o rei Salomao foi a Gabaon para oferecer sacrificio O Senhor apareceu a Salomao em sonho e lhe disse Pede o que desejas Salomao respondeu Tu mostraste grande benevolencia para com teu servo Davi meu pai agora fizeste reinar a mim em seu lugar mas eu sou jovem e nao sei governar Da ao teu servo um coracao compreensivo capaz de governar teu povo e discernir entre o bem e o mal Esta oracao agradou ao Senhor Deus disse a Salomao Ja que pediste sabedoria vou satisfazer teu pedido dou te um coracao sabio e inteligente como nunca houve outro igual antes nem havera depois de ti E dou te tambem riqueza e gloria como jamais houve entre os reis durante toda a tua vida Palavra do Senhor'
     },
     {
         data: '2026-02-08',
@@ -280,7 +280,7 @@ export const liturgiaDB = [
         salmo: 'Sl 111',
         leitura2: '1Cor 2,1-5',
         evangelho: 'Mt 5,13-16',
-        frase: 'Vós sois a luz do mundo.'
+        frase: 'Leitura do Livro do Profeta Isaias Assim diz o Senhor Reparte o pao com o faminto acolhe em casa os pobres e peregrinos quando encontrares um nu cobre o e nao desprezes a tua carne Entao brilhara tua luz como a aurora tua saude se recuperara a tua justica caminhara a tua frente e a gloria do Senhor te seguira Invocaras o Senhor e ele te atendera Se destruirem os instrumentos de opressao e acolheres o indigente nascera nas trevas a tua luz e tua vida sera como o meio dia Palavra do Senhor'
     },
     {
         data: '2026-02-09',
@@ -289,7 +289,7 @@ export const liturgiaDB = [
         leitura1: '1Rs 8,1-7.9-13',
         salmo: 'Sl 131',
         evangelho: 'Mt 6,53-56',
-        frase: 'Todos os que o tocavam ficavam curados.'
+        frase: 'Leitura do Primeiro Livro dos Reis Naqueles dias Salomao convocou em Jerusalem todos os anciaos de Israel para transferir a arca da alianca do Senhor Todo o povo se reuniu e os sacerdotes carregaram a arca com a tenda da reuniao Salomao e toda a comunidade imolavam ovelhas e bois em quantidade incalculavel Os sacerdotes conduziram a arca ao Santo dos Santos debaixo das asas dos querubins Dentro da arca estavam apenas as duas tabuas da lei Quando os sacerdotes deixaram o santuario uma nuvem encheu o templo e a gloria do Senhor o encheu Salomao disse Eu edifiquei uma casa para tua morada um templo onde vivas para sempre Palavra do Senhor'
     },
     {
         data: '2026-02-10',
